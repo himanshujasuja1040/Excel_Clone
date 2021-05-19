@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="./perfect-scrollbar-1.4.0/perfect-scrollbar-1.4.0/dist/perfect-scrollbar.js"></script>
+    <link rel="stylesheet" href="perfect-scrollbar-1.4.0/perfect-scrollbar-1.4.0/css/perfect-scrollbar.css">
+      <link rel="stylesheet" href="style.css">
+    <title>Excel-Clone</title>
+    <!-- 107C41 -->
+</head>
+<body>
+    <div class="container">
+        <div class="uppermost-container">
+            <div class="left-detail">
+                <div class="material-icons">apps</div>
+                <h5>Excel</h5>
+                <h6>Book 1-Saved</h6>
+                <div class="material-icons">expand_more</div>
+            </div>
+            <div class="mid-search-bar">
+                <div class="material-icons">search</div>
+                <input type="text" placeholder="Search (Alt+Q)">
+            </div>
+            <div class="right-detail">
+                <div class="material-icons">account_circle</div>
+
+            </div>
+        </div>
+        <div class="details-container">
+            <div class="file-detail">File</div>
+            <div class="Home-detail selected">Home</div>
+            <div class="Insert-detail">Insert</div>
+            <div class="page-detail">Page Layout</div>
+            <div class="data-detail">Data</div>
+            <div class="Help-detail">Help</div>
+        </div>
+        <div class="icons-container">
+            <div class="material-icons">undo</div>
+            <div class="material-icons">content_paste</div>
+            <div class="material-icons">format_paint</div>
+            <select class="font-family">
+                <option style="font-family:Arial, Helvetica, sans-serif;" value="Arial">Arial</option>
+                <option style="font-family: 'Courier New', Courier, monospace;" value="Courier New">Courier New</option>
+                <option style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" value="Franklin ">Franklin </option>
+                <option style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" value="Lucida Sans">Lucida Sans</option>
+                <option style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" value="Gill Sans">Gill Sans</option>
+                <option style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" value="Cambria">Cambria</option>    
+                <option style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" value="Segoe UI">Segoe UI</option>      
+                <option style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" value="Trebuchet MS">Trebuchet MS</option>      
+          </select>
+          <select class="font-size">
+              <option value="10">10</option>
+              <option value="12">12</option>
+              <option value="14">14</option>
+              <option value="16">16</option>
+              <option value="18">18</option>
+              <option value="20">20</option>
+              <option value="22">22</option>
+              <option value="24">24</option>
+              <option value="26">26</option>
+              <option value="30">30</option>
+          </select>
+            <div class="material-icons">format_bold</div>
+            <div class="material-icons">format_italic</div>
+            <div class="material-icons">format_underlined</div>
+            <div class="material-icons">format_color_fill</div>
+            <div class="material-icons">format_color_text</div>
+            <div class="material-icons">format_align_left</div>
+            <div class="material-icons">format_align_center</div>
+            <div class="material-icons">format_align_right</div>
+        </div>
+        <div class="formula-container">
+            <div class="left-formula-div" contenteditable="true"> A1</div>
+            <div class="mid-formula-div">fx</div>
+            <div class="right-formula-div" contenteditable="true"></div>
+        </div>
+        <div class="main-container">
+                <div class="selected-box"></div>
+                <div class="row-box"></div>
+                    <div class="column-box"> </div>
+                    <div class="main-box">
+                        </div>
+                    </div>
+        </div>
+        <div class="last-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.uppermost-container{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #107C41;
+    color: #FDFEFE;
+}
+.uppermost-container .left-detail{
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.uppermost-container .mid-search-bar{
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #C5DBCE;
+    border-radius: 2px;
+    /* min-width: 390px; */
+}
+.uppermost-container .mid-search-bar input{
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.uppermost-container .mid-search-bar .material-icons{
+    color: #BEBEBE;
+    cursor: pointer;
+}
+.uppermost-container .right-detail{
+    width: 2%;
+    cursor: pointer;
+}
+
+
+.details-container{
+    height: 3.5vh;
+    background-color: #F3F2F1;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.details-container div{
+margin: 0px 15px;
+padding: 4px 4px;
+cursor: default;
+}
+.details-container div:hover{
+    background-color: #dcdcdc;
+}
+.selected{
+    border-bottom:3px solid #107C41;
+    font-weight: 600;
+}
+.icons-container{
+    height: 3.5vh;
+    background-color: #F3F2F1;
+    display: flex;
+   align-items: center;
+}
+.icons-container .material-icons{
+    font-size: 17px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.icons-container select{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons-container .material-icons:hover{
+    background-color: #dcdcdc;
+}
+.formula-container{
+    height: 3.5vh;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left-formula-div{
+    width: 100px;
+    background-color: #fff;
+    height: 2.5vh;
+    border-radius: 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    outline: none;
+    border: 1px solid #107C41;
+}
+.mid-formula-div{
+    width: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+.right-formula-div{
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 1400px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    outline: transparent;
+}
+
+
+/*      MAIN BOX      */
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+}
+.main-container .selected-box{
+    min-width: 40px;
+    height: 3vh;
+    border: 1px solid lightgrey;
+    display: inline-block;
+    background-color: #F3F2F1;
+}
+.main-container .row-box{
+    width: 1496px;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: #F3F2F1; */
+}
+.main-container .column-box{
+    height: 550px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: #F3F2F1; */
+}
+.main-container .main-box{
+    position: relative;
+    min-width: 1496px;
+    width: 1496px;
+    min-height: 550px;
+    height: 550px;
+}
+.rows-name{
+    background-color: #F3F2F1;
+    border-right: 1px solid lightgrey;
+    min-width: 50px;
+    width: 50%;
+    text-align: center;
+  /* margin:0px 1px; */
+  cursor: pointer;
+}
+.rows-name:hover{
+    background-color: #E5E5E5;
+}
+.columns-name{
+    background-color: #F3F2F1;
+    border-bottom: 1px solid lightgrey;
+    min-height: 22px;
+    min-width: 35px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.columns-name:hover{
+    background-color: #E5E5E5;
+}
+.input-row{
+    display: flex;
+}
+.input-cell{
+    min-height: 22px;
+    height: 22px;
+    min-width: 50px;
+    width: 50px;
+    border-bottom:1px solid grey;
+    border-right:1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+.select{
+    border: 2px solid #107C41;
+}
